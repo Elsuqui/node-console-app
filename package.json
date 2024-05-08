@@ -1,0 +1,27 @@
+{
+  "name": "console-app",
+  "version": "1.0.0",
+  "description": "Console App using Node and Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node src/app.ts -b 10",
+    "dev:nodemon": "nodemon -b 10 --show -n 'tabla-del-10' --destination='outputs/tablas'",
+    "build": "rimraf ./dist && tsc",
+    "start": "node run build && node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.10",
+    "@types/yargs": "^17.0.32",
+    "nodemon": "^3.1.0",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
